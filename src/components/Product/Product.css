@@ -5,6 +5,10 @@
   padding: 10px;
 }
 
+.image {
+  padding: 0 30px;
+}
+
 .product:hover .info h4,
 .image {
   color: blue;
@@ -23,4 +27,9 @@
   border: none;
   color: black;
   border-radius: 5px;
+}
+
+.main-button:hover {
+  cursor: pointer;
+  background-color: darkorange;
 }
