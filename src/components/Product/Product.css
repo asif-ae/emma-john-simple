@@ -1,0 +1,26 @@
+.product {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  margin: 0 -5px 0 -20px;
+  padding: 10px;
+}
+
+.product:hover .info h4,
+.image {
+  color: blue;
+  cursor: pointer;
+}
+
+.info h4 {
+  color: lightsalmon;
+  font-weight: 400;
+}
+
+.main-button {
+  background-color: goldenrod;
+  width: 150px;
+  height: 25px;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
