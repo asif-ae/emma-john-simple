@@ -8,7 +8,7 @@ const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />
 
 const Product = (props) => {
   const {img, name, seller, price, stock} = props.main;
-  console.log(props.main);
+  console.log(props);
   return (
     <div className="product">
       <div className="image"><img src={img} alt={name}/></div>
@@ -17,7 +17,7 @@ const Product = (props) => {
         <small>By {seller}</small>
         <p><b>${price}</b></p>
         <p>Only {stock} items left - order soon</p>
-        <button className="main-button">{cartIcon} add to cart</button>
+        <button className="main-button" onClick={() => props.handleAddProduct(props.main)}>{cartIcon} add to cart</button>
       </div>
     </div>
   );
